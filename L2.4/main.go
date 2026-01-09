@@ -7,6 +7,9 @@ func main() {
 			ch <- i
 		}
 	}()
+
+	println(len(ch))
+
 	for n := range ch {
 		println(n)
 	}
