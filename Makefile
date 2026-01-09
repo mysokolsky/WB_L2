@@ -6,7 +6,7 @@ ALL_TARGETS := $(shell grep -E '^[a-zA-Z0-9_-]+:' Makefile | cut -d: -f1 | grep 
 
 # Определяем последнюю по числу папку для добавления в репу, например L3.21
 # LAST_TASK := $(shell ls -d L*.* | sort -V | tail -n1)
-LAST_TASK := $(shell ls -d L*.* 2>/dev/null | sort | tail -n 1)
+LAST_TASK := $(shell ls -d L*.* 2>/dev/null | sort -V | tail -n 1)
 
 # Первый аргумент вызова make сохраним в переменную PARAM
 # Пример: 
