@@ -110,9 +110,6 @@ GIT_URL := git@github.com:mysokolsky/$(REPO_NAME).git
 
 
 
-
-
-
 # # Создаём репозиторий, если его ещё нет
 # create-repo:
 # 	@if git ls-remote $(GIT_URL) >/dev/null 2>&1; then \
