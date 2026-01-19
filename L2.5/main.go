@@ -17,7 +17,7 @@ func (e *customError) Error() string {
 	return e.msg
 }
 
-func test() error {
+func test() *customError {
 	// ... do something
 	return nil
 }
