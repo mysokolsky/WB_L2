@@ -58,8 +58,8 @@ func merge(a, b <-chan int) <-chan int {
 func main() {
 	rand.Seed(time.Now().Unix())
 	a := asChan(1, 3, 5, 7)
-	time.Sleep(time.Duration( //rand.Intn
-		(100)) * time.Millisecond)
+	// time.Sleep(time.Duration( //rand.Intn
+	// 	(100)) * time.Millisecond)
 	b := asChan(2, 4, 6, 8)
 	c := merge(a, b)
 	for v := range c {
